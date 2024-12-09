@@ -1,0 +1,55 @@
+### API 1 Create User 
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "email": "arun.iyer@example.com",
+  "password": "hashedpass202",
+  "role": "Librarian"
+}
+
+### API 2 Login User
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "email":"john.doe@example.com",
+  "password":"johndoe_567"
+}
+
+###
+GET http://localhost:3000/api/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+
+
+###
+POST http://localhost:3000/api/borrow-requests/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "book_id": 3,
+  "start_date": "2024-12-10",
+  "end_date": "2024-12-20"
+}
+
+###
+GET http://localhost:3000/api/users/1/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+
+###
+GET http://localhost:3000/api/borrow-requests
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+
+###
+PUT http://localhost:3000/api/borrow-requests/2/approve
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+
+###
+PUT http://localhost:3000/api/borrow-requests/6/deny
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+
+###
+GET http://localhost:3000/api/users/1/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
