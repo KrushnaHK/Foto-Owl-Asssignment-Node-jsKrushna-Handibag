@@ -18,13 +18,30 @@ Content-Type: application/json
 }
 
 ###
+GET http://localhost:3000/api/borrow-requests
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
+
+###
+PUT http://localhost:3000/api/borrow-requests/8/approve
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
+
+###
+PUT http://localhost:3000/api/borrow-requests/11/deny
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
+
+###
+GET http://localhost:3000/api/users/1/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
+
+
+###
 GET http://localhost:3000/api/books/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
 
 
 ###
 POST http://localhost:3000/api/borrow-requests/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
 Content-Type: application/json
 
 {
@@ -35,21 +52,5 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/users/1/history
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
-
-###
-GET http://localhost:3000/api/borrow-requests
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
-
-###
-PUT http://localhost:3000/api/borrow-requests/2/approve
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
-
-###
-PUT http://localhost:3000/api/borrow-requests/6/deny
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
-
-###
-GET http://localhost:3000/api/users/1/history
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzU5MDY1fQ.ceTNLoUrGrM3jzzw7jJfIMQqPzDYv1qKUqUuZIPx_wA
+GET http://localhost:3000/api/users/2/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzODA0NDM3fQ.5NBsYkmsnXTC0RrOLoLeADDmbCMN8-tUdCf2exeLWcg
